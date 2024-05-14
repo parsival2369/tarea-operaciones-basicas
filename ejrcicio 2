@@ -1,0 +1,11 @@
+Algoritmo ejercicio2
+	Escribir "Numero1 "
+	Leer  Numero1 
+	Escribir "Numero2"
+	Leer Numero2
+	Escribir "Numero3"
+	Leer numero3
+	suma<- Numero1 + Numero2 + numero3
+	Escribir "la suma de los tres numeros es:", suma 
+	
+FinAlgoritmo
