@@ -1,0 +1,31 @@
+Algoritmo determinarposibilidadesdeejecutaruninstrumento
+	Definir gustaMusica Como Logico
+	Definir puedeEjecutarInstrumento Como Logico
+	Definir tieneNerviosDeAcero Como Logico
+	Definir puedeEjecutarEnAuditorio Como Logico
+	
+	// solicitar al usuario si le gusta la musica
+	Escribir "¿Le gusta la musica? (verdadero/falso):"
+	Leer gustaMusica
+	
+	// solicitar al usuario si puede ejecutar un instrumento 
+	Escribir 	"¿Puede ejecutar un instrumento? (verdadero/falso):"
+	Leer puedeEjecutarunInstrumento 
+	
+	// solicitar al usuario si tiene nervios de acero para estar frente a una multitud 
+	Escribir "¿Escribir Tiene nervios de acero para estar fente a una multitud (verdadero/falso):"
+	Leer tieneNerviosDeAcero
+	
+	// verificar si cumple los criterios para ejecutar un instrumento en el auditorio 
+	Si gustaMusica y puedeEjecutarInstrumento y tienedeNerviosdeAcero Entonces
+		puedeEjecutarEnAuditorio <- Verdadero
+	SiNo
+		puedeEjecutarEnAuditorio <- falso
+	FinSi
+	// Mostrar el resultado
+	si puedeEjecutarEnAuditorio Entonces
+		Escribir "Usted puede ejecutar un instrumento en el auditorio ante una multitud."
+    SiNo
+		Escribir "Usted NO puede ejecutar un instrumento en el auditorio ante una multitud."
+	FinSi
+FinAlgoritmo
