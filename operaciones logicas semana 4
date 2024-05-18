@@ -1,0 +1,27 @@
+Algoritmo Votacionelecciones 
+	Definir edad Como Entero
+	Definir tieneNuevatarjetaID Como Logico
+	Definir puedevotar Como Logico
+	
+	// solicitar al usuario edad 
+	Escribir "Ingrese su edad"
+	Leer edad
+	
+	// solicitar al ususario si tiene la nueva tarjeta de identificacion nacional
+	Escribir "tiene la nueva tarjeta de identificacion nacional? ( verdadero / falso  ) "
+	leer tienenuevaTarjetaID
+	
+	// verificar si el ususario es mayor de edad 
+	si edad >= 18 y tienenuevaTarjetaID Entonces 
+		puedevotar <- verdadero 
+	SiNo
+		puedevotar <- falso 
+	FinSi
+	
+	// Mostrar el resultado 
+	si puedevotar entonces
+		Escribir "Usted es elegible para votar en las elecciones genrales."
+	SiNo
+		Escribir  " Usted NO es elegible para votar en las elecciones generales"
+	FinSi
+FinAlgoritmo
