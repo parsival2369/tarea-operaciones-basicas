@@ -1,8 +1,0 @@
-Algoritmo ejercicio1 
-	Definir nombre,apellido como cadena 
-	Escribir "por favor ingresa tu nombre "
-	leer nombre 
-	Escribir "Ingresar apellido "
-	leer apellido 
-	Escribir "¡Bienvenido,", nombre, apellido, "!"
-FinAlgoritmo
