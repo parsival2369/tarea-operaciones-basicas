@@ -1,1 +1,1 @@
-# tarea-operaciones-basicas
+# tarea-operaciones-Logicas
