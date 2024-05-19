@@ -1,0 +1,26 @@
+Algoritmo Intenciondeviaje
+	Definir tieneDestino Como Logico
+	Definir tieneCompania Como Logico
+	Definir tieneIntencionDeViaje como Logico 
+	
+	// solicitar al usuario si tiene un lugar de destino desconocido
+	Escribir "¿Tiene un lugar de destino decidido? (verdadero/falso)"
+	Leer tieneDestino 
+	
+	// solicitar al usuario si contara con la compania de amigos o familiares 
+	Escribir "¿ Contara con la compania de famniliares o amigos? (verdadero/falso):"
+	Leer tieneCompania 
+	
+	// verificar si cumple los criterios para intencion de viajar 
+	si tieneDestino y tienecompania Entonces 
+		tieneIntencionDeViaje <- Verdadero
+	sino 
+		tieneIntencionDeViaje <- Falso 
+	FinSi
+	// Mostrar el resultado 
+	si tieneIntencionDeViaje Entonces
+		Escribir "Usted tiene la intencion de viajar"
+	sino 
+		Escribir "Usted No tiene la intencion de viajar"
+	FinSi
+FinAlgoritmo
