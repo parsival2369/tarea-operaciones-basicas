@@ -1,0 +1,39 @@
+Algoritmo asegurarexitoprofesinal
+	Definir adquiereconocimiento Como Logico
+	Definir bajooTuletaDeUNnMentor Como Logico
+	definir esAutoDidacta Como Logico
+	Definir tieneBuenaActitud Como Logico
+	Definir tieneExitoProfesional como logico
+	
+	// solicitar al ususario si adquiere conocimiento diariamentee
+	Escribir "¿Adquiere conocimiento diariamentee?  (verdadero/falso)"
+	Leer adquiereConocimiento 
+	
+	// solicitar al usuario si esta bajo la tuleta de un mentor
+	Escribir "¿si esta bajo la tuleta de un mentor? (verdadero/falso)"
+	Leer estaBajoLaTuletaDeUnAutor
+	
+	//  preguntar al usuario si es autodidacta
+	Escribir "¿ si se considera a si mismo autodidacta? (verdadero/falso)"
+	Leer seConsideraAutodidacta
+	
+	// solicitar al usuario si tiene actitud para enfrentar problemas 
+	Escribir "¿ tiene actitud para enfrentar problemas? (verdadero/falso)"
+	Leer tieneActitudParaEnfrentarProblemas
+	
+	// verificar si cumple los criterios para asegurar el exito 
+	Si adquiereconocimiento y (BajoTuletaMentor o esAutodidacta) y tieneBuenaActitud Entonces 
+		tieneExitoProfesional <- Verdadero
+	SiNo
+		tieneExitoProfesional <- falso 
+	
+	Finsi 
+	
+		// Mostrar el resultado
+		Si tieneExitoProfesional Entonces
+			Escribir "Usted está en camino de asegurar el éxito profesional."
+		SiNo
+			Escribir "Aún le faltan algunos factores para asegurar el éxito profesional."
+		FinSi
+	
+FinAlgoritmo
